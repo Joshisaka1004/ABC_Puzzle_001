@@ -6,360 +6,651 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter-Bold</string>
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--PuzzleVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ABC_Puzzle_001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="puzzleVC" customModule="ABC_Puzzle_001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="v1G-cw-rIv">
-                                <rect key="frame" x="50" y="118" width="275" height="293"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vsu-y6-Ig8">
+                                <rect key="frame" x="53.666666666666657" y="100" width="268" height="268"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jfH-hX-cAJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="48"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Dsf-2p-mc9">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3e-qr-HBF">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-Ew-zl1">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JcF-Ew-zl1" secondAttribute="height" multiplier="1:1" id="gxX-14-ZwT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jy-mb-eie"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN9-VK-TrE">
-                                                <rect key="frame" x="46.333333333333329" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="N7t-Sv-l57">
+                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="N7t-Sv-l57" secondAttribute="height" multiplier="1:1" id="edl-bz-L6d"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFh-AM-TGH"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwx-bs-q7e">
-                                                <rect key="frame" x="92.333333333333343" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="atL-1K-ZgD">
+                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="atL-1K-ZgD" secondAttribute="height" multiplier="1:1" id="FTx-Mm-4lE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xop-Hc-KQv"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8h-KP-Q1C">
-                                                <rect key="frame" x="138.66666666666666" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lMm-4S-uOo">
+                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lMm-4S-uOo" secondAttribute="height" multiplier="1:1" id="WvY-za-w8j"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKX-fz-vyU"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-zV-p2U">
-                                                <rect key="frame" x="184.66666666666666" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-bM-Gq9">
+                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kTB-bM-Gq9" secondAttribute="height" multiplier="1:1" id="mkM-kR-rNo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w6v-Jq-Z2F"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cce-vg-1LX">
-                                                <rect key="frame" x="231" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XiD-6g-UFb">
+                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XiD-6g-UFb" secondAttribute="height" multiplier="1:1" id="SCb-LR-9ZT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="msC-fs-JAC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="atL-1K-ZgD" firstAttribute="width" secondItem="atL-1K-ZgD" secondAttribute="height" multiplier="1:1" id="4Gd-UV-gQp"/>
+                                            <constraint firstItem="kTB-bM-Gq9" firstAttribute="width" secondItem="kTB-bM-Gq9" secondAttribute="height" multiplier="1:1" id="8IU-Qm-dDb"/>
+                                            <constraint firstItem="kTB-bM-Gq9" firstAttribute="width" secondItem="kTB-bM-Gq9" secondAttribute="height" multiplier="1:1" id="Dyg-W7-sAp"/>
+                                            <constraint firstItem="XiD-6g-UFb" firstAttribute="width" secondItem="XiD-6g-UFb" secondAttribute="height" multiplier="1:1" id="MMJ-9d-foZ"/>
+                                            <constraint firstItem="XiD-6g-UFb" firstAttribute="width" secondItem="XiD-6g-UFb" secondAttribute="height" multiplier="1:1" id="MzM-xB-wxi"/>
+                                            <constraint firstItem="atL-1K-ZgD" firstAttribute="width" secondItem="atL-1K-ZgD" secondAttribute="height" multiplier="1:1" id="WU5-9G-uMG"/>
+                                            <constraint firstItem="lMm-4S-uOo" firstAttribute="width" secondItem="lMm-4S-uOo" secondAttribute="height" multiplier="1:1" id="dwb-RH-0cO"/>
+                                            <constraint firstItem="N7t-Sv-l57" firstAttribute="width" secondItem="N7t-Sv-l57" secondAttribute="height" multiplier="1:1" id="oCn-ne-taH"/>
+                                            <constraint firstItem="XiD-6g-UFb" firstAttribute="width" secondItem="XiD-6g-UFb" secondAttribute="height" multiplier="1:1" id="sVN-rY-SnN"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-UT-sDF">
-                                        <rect key="frame" x="0.0" y="49" width="275" height="48"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="BuA-Ir-ZNN">
+                                        <rect key="frame" x="0.0" y="45" width="268" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmQ-Qi-XCM">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ha9-5g-oeM">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ha9-5g-oeM" secondAttribute="height" multiplier="1:1" id="D51-wk-e5q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B2k-Js-iyT"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyJ-j9-fV2">
-                                                <rect key="frame" x="46.333333333333329" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qJX-gb-qwV">
+                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qJX-gb-qwV" secondAttribute="height" multiplier="1:1" id="kTq-M0-W5j"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIQ-BJ-zm8"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLI-eF-cKp">
-                                                <rect key="frame" x="92.333333333333343" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QcJ-Jj-AWI">
+                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QcJ-Jj-AWI" secondAttribute="height" multiplier="1:1" id="nOq-LR-EhC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3od-3e-Dx5"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Le-yj-v1o">
-                                                <rect key="frame" x="138.66666666666666" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5cm-gQ-bC4">
+                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="5cm-gQ-bC4" secondAttribute="height" multiplier="1:1" id="AsV-Vn-0sr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3W-mm-MZU"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afM-zb-tFa">
-                                                <rect key="frame" x="184.66666666666666" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="T7D-Sw-zEd">
+                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="T7D-Sw-zEd" secondAttribute="height" multiplier="1:1" id="69q-cq-JTg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ls-hD-Kte"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-1X-Ayu">
-                                                <rect key="frame" x="231" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="puq-Ju-NXP">
+                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="puq-Ju-NXP" secondAttribute="height" multiplier="1:1" id="fhm-ga-4HB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIc-EB-5Mv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="QcJ-Jj-AWI" firstAttribute="width" secondItem="QcJ-Jj-AWI" secondAttribute="height" multiplier="1:1" id="2m4-Ii-I56"/>
+                                            <constraint firstItem="5cm-gQ-bC4" firstAttribute="width" secondItem="5cm-gQ-bC4" secondAttribute="height" multiplier="1:1" id="6BG-2X-48h"/>
+                                            <constraint firstItem="T7D-Sw-zEd" firstAttribute="width" secondItem="T7D-Sw-zEd" secondAttribute="height" multiplier="1:1" id="7Hf-ox-ZQd"/>
+                                            <constraint firstItem="QcJ-Jj-AWI" firstAttribute="width" secondItem="QcJ-Jj-AWI" secondAttribute="height" multiplier="1:1" id="TPa-P0-wAR"/>
+                                            <constraint firstItem="puq-Ju-NXP" firstAttribute="width" secondItem="puq-Ju-NXP" secondAttribute="height" multiplier="1:1" id="Xig-hd-v6a"/>
+                                            <constraint firstItem="puq-Ju-NXP" firstAttribute="width" secondItem="puq-Ju-NXP" secondAttribute="height" multiplier="1:1" id="eAi-5y-jM4"/>
+                                            <constraint firstItem="T7D-Sw-zEd" firstAttribute="width" secondItem="T7D-Sw-zEd" secondAttribute="height" multiplier="1:1" id="kPb-2E-Y1G"/>
+                                            <constraint firstItem="puq-Ju-NXP" firstAttribute="width" secondItem="puq-Ju-NXP" secondAttribute="height" multiplier="1:1" id="nHN-8M-9cb"/>
+                                            <constraint firstItem="qJX-gb-qwV" firstAttribute="width" secondItem="qJX-gb-qwV" secondAttribute="height" multiplier="1:1" id="tc6-pe-ywV"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Nmi-Wk-38F">
-                                        <rect key="frame" x="0.0" y="98" width="275" height="48"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-Bw-2ML">
+                                        <rect key="frame" x="0.0" y="90" width="268" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRE-y9-L3D">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XLS-QU-X2I">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XLS-QU-X2I" secondAttribute="height" multiplier="1:1" id="jRc-aW-Sv6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMD-zX-HfB"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyT-vE-KV6">
-                                                <rect key="frame" x="46.333333333333329" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QXy-lN-44G">
+                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QXy-lN-44G" secondAttribute="height" multiplier="1:1" id="AyT-NA-JnV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKN-gs-dUl"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uht-3w-JHJ">
-                                                <rect key="frame" x="92.333333333333343" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wCz-aw-X4a">
+                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wCz-aw-X4a" secondAttribute="height" multiplier="1:1" id="5og-9F-8ew"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xVv-Lg-jLr"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5P-OD-30M">
-                                                <rect key="frame" x="138.66666666666666" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DLd-Kv-hz0">
+                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="DLd-Kv-hz0" secondAttribute="height" multiplier="1:1" id="QPV-gp-8Yh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Gj-4z-MGp"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="316-4x-hGG">
-                                                <rect key="frame" x="184.66666666666666" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="11W-UU-s6f">
+                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="11W-UU-s6f" secondAttribute="height" multiplier="1:1" id="pxI-hq-Cb0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Z7-pJ-Qgb"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxf-zP-AqD">
-                                                <rect key="frame" x="231" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Li2-Ha-AG7">
+                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Li2-Ha-AG7" secondAttribute="height" multiplier="1:1" id="JnH-d1-V6H"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCa-1M-Nu0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Li2-Ha-AG7" firstAttribute="width" secondItem="Li2-Ha-AG7" secondAttribute="height" multiplier="1:1" id="0M0-EU-daP"/>
+                                            <constraint firstItem="DLd-Kv-hz0" firstAttribute="width" secondItem="DLd-Kv-hz0" secondAttribute="height" multiplier="1:1" id="0Rq-U9-bc0"/>
+                                            <constraint firstItem="11W-UU-s6f" firstAttribute="width" secondItem="11W-UU-s6f" secondAttribute="height" multiplier="1:1" id="74x-dN-lGM"/>
+                                            <constraint firstItem="Li2-Ha-AG7" firstAttribute="width" secondItem="Li2-Ha-AG7" secondAttribute="height" multiplier="1:1" id="BT1-Na-QBW"/>
+                                            <constraint firstItem="wCz-aw-X4a" firstAttribute="width" secondItem="wCz-aw-X4a" secondAttribute="height" multiplier="1:1" id="Frc-hM-SNH"/>
+                                            <constraint firstItem="Li2-Ha-AG7" firstAttribute="width" secondItem="Li2-Ha-AG7" secondAttribute="height" multiplier="1:1" id="H8w-W5-Dgc"/>
+                                            <constraint firstItem="wCz-aw-X4a" firstAttribute="width" secondItem="wCz-aw-X4a" secondAttribute="height" multiplier="1:1" id="RbU-oj-6V0"/>
+                                            <constraint firstItem="11W-UU-s6f" firstAttribute="width" secondItem="11W-UU-s6f" secondAttribute="height" multiplier="1:1" id="pcm-SM-usV"/>
+                                            <constraint firstItem="QXy-lN-44G" firstAttribute="width" secondItem="QXy-lN-44G" secondAttribute="height" multiplier="1:1" id="qGY-Hu-4t0"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="W6j-sk-G0m">
-                                        <rect key="frame" x="0.0" y="147" width="275" height="48"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mqt-5f-lSC">
+                                        <rect key="frame" x="0.0" y="135" width="268" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8k-pt-huV">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RNs-Iw-s3C">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RNs-Iw-s3C" secondAttribute="height" multiplier="1:1" id="dKB-zg-5t6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OsC-Tn-OU0"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhx-fi-0ty">
-                                                <rect key="frame" x="46.333333333333329" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="n5g-rW-GUS">
+                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="n5g-rW-GUS" secondAttribute="height" multiplier="1:1" id="LOf-lz-u0a"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8R-FA-ebl"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGt-mH-eAy">
-                                                <rect key="frame" x="92.333333333333343" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YX7-TQ-xTO">
+                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YX7-TQ-xTO" secondAttribute="height" multiplier="1:1" id="SES-Nw-1a9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZN-QN-WlM"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZS-3m-QX0">
-                                                <rect key="frame" x="138.66666666666666" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qqa-vA-BDo">
+                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qqa-vA-BDo" secondAttribute="height" multiplier="1:1" id="XfX-Uz-6zy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vG-95-YA2"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyM-SD-plt">
-                                                <rect key="frame" x="184.66666666666666" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xcz-3D-AOC">
+                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xcz-3D-AOC" secondAttribute="height" multiplier="1:1" id="NBH-0i-VE1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="30V-U2-1pW"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkx-wF-Upn">
-                                                <rect key="frame" x="231" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-aG-Ou4">
+                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="WNh-aG-Ou4" secondAttribute="height" multiplier="1:1" id="kCw-Gt-ILN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Xa-Xo-Cjw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xcz-3D-AOC" firstAttribute="width" secondItem="xcz-3D-AOC" secondAttribute="height" multiplier="1:1" id="1kQ-X3-KqL"/>
+                                            <constraint firstItem="n5g-rW-GUS" firstAttribute="width" secondItem="n5g-rW-GUS" secondAttribute="height" multiplier="1:1" id="2nI-5f-yQs"/>
+                                            <constraint firstItem="WNh-aG-Ou4" firstAttribute="width" secondItem="WNh-aG-Ou4" secondAttribute="height" multiplier="1:1" id="EqJ-al-7OR"/>
+                                            <constraint firstItem="YX7-TQ-xTO" firstAttribute="width" secondItem="YX7-TQ-xTO" secondAttribute="height" multiplier="1:1" id="bMp-GY-PCa"/>
+                                            <constraint firstItem="xcz-3D-AOC" firstAttribute="width" secondItem="xcz-3D-AOC" secondAttribute="height" multiplier="1:1" id="bsM-8C-M4I"/>
+                                            <constraint firstItem="qqa-vA-BDo" firstAttribute="width" secondItem="qqa-vA-BDo" secondAttribute="height" multiplier="1:1" id="fR9-Ox-Pug"/>
+                                            <constraint firstItem="WNh-aG-Ou4" firstAttribute="width" secondItem="WNh-aG-Ou4" secondAttribute="height" multiplier="1:1" id="ijK-cV-HAl"/>
+                                            <constraint firstItem="YX7-TQ-xTO" firstAttribute="width" secondItem="YX7-TQ-xTO" secondAttribute="height" multiplier="1:1" id="jce-Qf-cF5"/>
+                                            <constraint firstItem="WNh-aG-Ou4" firstAttribute="width" secondItem="WNh-aG-Ou4" secondAttribute="height" multiplier="1:1" id="nvf-s8-mNa"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="T2m-U4-3S2">
-                                        <rect key="frame" x="0.0" y="196" width="275" height="48"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UFA-gy-1ha">
+                                        <rect key="frame" x="0.0" y="180" width="268" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2s9-BI-cYu">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qTH-qj-5vo">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="qTH-qj-5vo" secondAttribute="height" multiplier="1:1" id="JUq-4c-Kh9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZe-Vh-iF1"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyM-gG-E0D">
-                                                <rect key="frame" x="46.333333333333329" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MML-zb-rdZ">
+                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="MML-zb-rdZ" secondAttribute="height" multiplier="1:1" id="4Ui-jA-kwP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QoK-NJ-hCy"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTJ-Ns-Kvf">
-                                                <rect key="frame" x="92.333333333333343" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-1O-7bR">
+                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Jt7-1O-7bR" secondAttribute="height" multiplier="1:1" id="Fcr-zQ-uhO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfy-Px-nKX"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKa-KP-tF0">
-                                                <rect key="frame" x="138.66666666666666" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="clK-sL-to0">
+                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="clK-sL-to0" secondAttribute="height" multiplier="1:1" id="lNa-Gn-EM7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MwK-4Z-BSS"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o23-4N-gd1">
-                                                <rect key="frame" x="184.66666666666666" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dcY-7W-5qf">
+                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dcY-7W-5qf" secondAttribute="height" multiplier="1:1" id="J7c-PT-aOe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDa-ui-OWK"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMR-WG-lZJ">
-                                                <rect key="frame" x="231" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hXc-T5-TI3">
+                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hXc-T5-TI3" secondAttribute="height" multiplier="1:1" id="OVc-nj-JNZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xRR-Fb-cBB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="hXc-T5-TI3" firstAttribute="width" secondItem="hXc-T5-TI3" secondAttribute="height" multiplier="1:1" id="54L-Uz-af5"/>
+                                            <constraint firstItem="clK-sL-to0" firstAttribute="width" secondItem="clK-sL-to0" secondAttribute="height" multiplier="1:1" id="6Es-Oh-mxl"/>
+                                            <constraint firstItem="dcY-7W-5qf" firstAttribute="width" secondItem="dcY-7W-5qf" secondAttribute="height" multiplier="1:1" id="Eh9-Sz-N3E"/>
+                                            <constraint firstItem="hXc-T5-TI3" firstAttribute="width" secondItem="hXc-T5-TI3" secondAttribute="height" multiplier="1:1" id="L3x-UZ-TNd"/>
+                                            <constraint firstItem="Jt7-1O-7bR" firstAttribute="width" secondItem="Jt7-1O-7bR" secondAttribute="height" multiplier="1:1" id="TnW-f6-vO1"/>
+                                            <constraint firstItem="MML-zb-rdZ" firstAttribute="width" secondItem="MML-zb-rdZ" secondAttribute="height" multiplier="1:1" id="Yo2-hn-eij"/>
+                                            <constraint firstItem="hXc-T5-TI3" firstAttribute="width" secondItem="hXc-T5-TI3" secondAttribute="height" multiplier="1:1" id="azt-nx-gdS"/>
+                                            <constraint firstItem="Jt7-1O-7bR" firstAttribute="width" secondItem="Jt7-1O-7bR" secondAttribute="height" multiplier="1:1" id="kH4-WB-lGN"/>
+                                            <constraint firstItem="dcY-7W-5qf" firstAttribute="width" secondItem="dcY-7W-5qf" secondAttribute="height" multiplier="1:1" id="yTi-yn-Eke"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jM9-RR-wFL">
-                                        <rect key="frame" x="0.0" y="245" width="275" height="48"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-2I-dXo">
+                                        <rect key="frame" x="0.0" y="225" width="268" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bq-6b-In4">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oRl-U4-qsk">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="oRl-U4-qsk" secondAttribute="height" multiplier="1:1" id="g9b-w5-7Jl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lKf-ka-6Gp"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRh-nv-Jle">
-                                                <rect key="frame" x="46.333333333333329" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nQ9-By-gsK">
+                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="nQ9-By-gsK" secondAttribute="height" multiplier="1:1" id="vBy-EZ-KUA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PeK-j2-NCh"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNr-AA-37r">
-                                                <rect key="frame" x="92.333333333333343" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xs2-kp-jSx">
+                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xs2-kp-jSx" secondAttribute="height" multiplier="1:1" id="Ld0-ad-L1G"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="13I-Us-CYD"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFH-3M-Rgi">
-                                                <rect key="frame" x="138.66666666666666" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-KF-YHw">
+                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Hlh-KF-YHw" secondAttribute="height" multiplier="1:1" id="vHg-FS-zW7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rma-QC-Qiv"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnK-lQ-G3W">
-                                                <rect key="frame" x="184.66666666666666" y="0.0" width="44.333333333333343" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yfX-Ed-iaU">
+                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yfX-Ed-iaU" secondAttribute="height" multiplier="1:1" id="de7-vK-gjV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6I2-gN-zg2"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sg-7X-zZo">
-                                                <rect key="frame" x="231" y="0.0" width="44" height="48"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C5N-ZN-5I8">
+                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="C5N-ZN-5I8" secondAttribute="height" multiplier="1:1" id="q9R-7N-hAB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="myB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PX4-E5-gbZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xs2-kp-jSx" firstAttribute="width" secondItem="xs2-kp-jSx" secondAttribute="height" multiplier="1:1" id="66M-vn-qPV"/>
+                                            <constraint firstItem="C5N-ZN-5I8" firstAttribute="width" secondItem="C5N-ZN-5I8" secondAttribute="height" multiplier="1:1" id="Epm-sr-HGh"/>
+                                            <constraint firstItem="Hlh-KF-YHw" firstAttribute="width" secondItem="Hlh-KF-YHw" secondAttribute="height" multiplier="1:1" id="IWO-Pg-Lv6"/>
+                                            <constraint firstItem="yfX-Ed-iaU" firstAttribute="width" secondItem="yfX-Ed-iaU" secondAttribute="height" multiplier="1:1" id="NYk-JW-SCl"/>
+                                            <constraint firstItem="nQ9-By-gsK" firstAttribute="width" secondItem="nQ9-By-gsK" secondAttribute="height" multiplier="1:1" id="Vci-42-u0L"/>
+                                            <constraint firstItem="xs2-kp-jSx" firstAttribute="width" secondItem="xs2-kp-jSx" secondAttribute="height" multiplier="1:1" id="f8V-Fi-4LX"/>
+                                            <constraint firstItem="yfX-Ed-iaU" firstAttribute="width" secondItem="yfX-Ed-iaU" secondAttribute="height" multiplier="1:1" id="jEP-67-AKm"/>
+                                            <constraint firstItem="C5N-ZN-5I8" firstAttribute="width" secondItem="C5N-ZN-5I8" secondAttribute="height" multiplier="1:1" id="rZr-Oa-OXY"/>
+                                            <constraint firstItem="C5N-ZN-5I8" firstAttribute="width" secondItem="C5N-ZN-5I8" secondAttribute="height" multiplier="1:1" id="zom-gN-sfl"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.8142610736" green="1" blue="0.84822135600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="v1G-cw-rIv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0eX-gS-vng"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="v1G-cw-rIv" secondAttribute="bottom" constant="20" id="A8E-eB-Dc8"/>
-                            <constraint firstItem="v1G-cw-rIv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Es4-no-5xP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v1G-cw-rIv" secondAttribute="trailing" constant="50" id="qUh-sX-0gt"/>
+                            <constraint firstItem="vsu-y6-Ig8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Bio-3Z-PhS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vsu-y6-Ig8" secondAttribute="bottom" priority="250" constant="2" id="TfX-JY-mKQ"/>
+                            <constraint firstItem="vsu-y6-Ig8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gYW-su-gNU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="verticalStack" destination="vsu-y6-Ig8" id="DUi-sQ-FzZ"/>
+                        <outletCollection property="horizontalStacks" destination="Dsf-2p-mc9" collectionClass="NSMutableArray" id="byl-by-TaF"/>
+                        <outletCollection property="horizontalStacks" destination="BuA-Ir-ZNN" collectionClass="NSMutableArray" id="eaT-24-pqY"/>
+                        <outletCollection property="horizontalStacks" destination="Hen-Bw-2ML" collectionClass="NSMutableArray" id="q7T-g7-mSX"/>
+                        <outletCollection property="horizontalStacks" destination="mqt-5f-lSC" collectionClass="NSMutableArray" id="eif-2u-VKp"/>
+                        <outletCollection property="horizontalStacks" destination="UFA-gy-1ha" collectionClass="NSMutableArray" id="23F-7s-Uaa"/>
+                        <outletCollection property="horizontalStacks" destination="2A4-2I-dXo" collectionClass="NSMutableArray" id="cL5-wn-ld3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186.4000000000001" y="29.55665024630542"/>
+            <point key="canvasLocation" x="1023" y="108"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fG5-9i-MWH">
