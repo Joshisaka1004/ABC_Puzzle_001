@@ -24,20 +24,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="vsu-y6-Ig8">
-                                <rect key="frame" x="53.666666666666657" y="100" width="268" height="268"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="vsu-y6-Ig8">
+                                <rect key="frame" x="56.333333333333343" y="100" width="263" height="263"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Dsf-2p-mc9">
-                                        <rect key="frame" x="0.0" y="0.0" width="268" height="43"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dsf-2p-mc9">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-Ew-zl1">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="JcF-Ew-zl1" secondAttribute="height" multiplier="1:1" id="gxX-14-ZwT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -45,13 +45,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="N7t-Sv-l57">
-                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="44" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="N7t-Sv-l57" secondAttribute="height" multiplier="1:1" id="edl-bz-L6d"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -59,13 +59,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="atL-1K-ZgD">
-                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="88" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="atL-1K-ZgD" secondAttribute="height" multiplier="1:1" id="FTx-Mm-4lE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -73,13 +73,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lMm-4S-uOo">
-                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="132" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lMm-4S-uOo" secondAttribute="height" multiplier="1:1" id="WvY-za-w8j"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -87,13 +87,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-bM-Gq9">
-                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="176" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kTB-bM-Gq9" secondAttribute="height" multiplier="1:1" id="mkM-kR-rNo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -101,13 +101,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XiD-6g-UFb">
-                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="219.99999999999997" y="0.0" width="43.000000000000028" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="XiD-6g-UFb" secondAttribute="height" multiplier="1:1" id="SCb-LR-9ZT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -127,17 +127,17 @@
                                             <constraint firstItem="XiD-6g-UFb" firstAttribute="width" secondItem="XiD-6g-UFb" secondAttribute="height" multiplier="1:1" id="sVN-rY-SnN"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="BuA-Ir-ZNN">
-                                        <rect key="frame" x="0.0" y="45" width="268" height="43"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="BuA-Ir-ZNN">
+                                        <rect key="frame" x="0.0" y="44" width="263" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ha9-5g-oeM">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ha9-5g-oeM" secondAttribute="height" multiplier="1:1" id="D51-wk-e5q"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -145,13 +145,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qJX-gb-qwV">
-                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="44" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8415828339041096" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qJX-gb-qwV" secondAttribute="height" multiplier="1:1" id="kTq-M0-W5j"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -159,13 +159,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QcJ-Jj-AWI">
-                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="88" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8415828339041096" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="QcJ-Jj-AWI" secondAttribute="height" multiplier="1:1" id="nOq-LR-EhC"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -173,13 +173,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5cm-gQ-bC4">
-                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="132" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8415828339041096" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="5cm-gQ-bC4" secondAttribute="height" multiplier="1:1" id="AsV-Vn-0sr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -187,13 +187,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="T7D-Sw-zEd">
-                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="176" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8415828339041096" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="T7D-Sw-zEd" secondAttribute="height" multiplier="1:1" id="69q-cq-JTg"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -201,13 +201,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="puq-Ju-NXP">
-                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="219.99999999999997" y="0.0" width="43.000000000000028" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="puq-Ju-NXP" secondAttribute="height" multiplier="1:1" id="fhm-ga-4HB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -227,17 +227,17 @@
                                             <constraint firstItem="qJX-gb-qwV" firstAttribute="width" secondItem="qJX-gb-qwV" secondAttribute="height" multiplier="1:1" id="tc6-pe-ywV"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-Bw-2ML">
-                                        <rect key="frame" x="0.0" y="90" width="268" height="43"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-Bw-2ML">
+                                        <rect key="frame" x="0.0" y="88" width="263" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XLS-QU-X2I">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="XLS-QU-X2I" secondAttribute="height" multiplier="1:1" id="jRc-aW-Sv6"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -245,13 +245,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QXy-lN-44G">
-                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="44" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="QXy-lN-44G" secondAttribute="height" multiplier="1:1" id="AyT-NA-JnV"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -259,13 +259,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wCz-aw-X4a">
-                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="88" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wCz-aw-X4a" secondAttribute="height" multiplier="1:1" id="5og-9F-8ew"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -273,13 +273,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DLd-Kv-hz0">
-                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="132" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="DLd-Kv-hz0" secondAttribute="height" multiplier="1:1" id="QPV-gp-8Yh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -287,13 +287,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="11W-UU-s6f">
-                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="176" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="11W-UU-s6f" secondAttribute="height" multiplier="1:1" id="pxI-hq-Cb0"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -301,13 +301,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Li2-Ha-AG7">
-                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="219.99999999999997" y="0.0" width="43.000000000000028" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Li2-Ha-AG7" secondAttribute="height" multiplier="1:1" id="JnH-d1-V6H"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -327,17 +327,17 @@
                                             <constraint firstItem="QXy-lN-44G" firstAttribute="width" secondItem="QXy-lN-44G" secondAttribute="height" multiplier="1:1" id="qGY-Hu-4t0"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mqt-5f-lSC">
-                                        <rect key="frame" x="0.0" y="135" width="268" height="43"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mqt-5f-lSC">
+                                        <rect key="frame" x="0.0" y="132" width="263" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RNs-Iw-s3C">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="RNs-Iw-s3C" secondAttribute="height" multiplier="1:1" id="dKB-zg-5t6"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -345,13 +345,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="n5g-rW-GUS">
-                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="44" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="n5g-rW-GUS" secondAttribute="height" multiplier="1:1" id="LOf-lz-u0a"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -359,13 +359,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YX7-TQ-xTO">
-                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="88" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="YX7-TQ-xTO" secondAttribute="height" multiplier="1:1" id="SES-Nw-1a9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -373,13 +373,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qqa-vA-BDo">
-                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="132" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qqa-vA-BDo" secondAttribute="height" multiplier="1:1" id="XfX-Uz-6zy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -387,13 +387,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xcz-3D-AOC">
-                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="176" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xcz-3D-AOC" secondAttribute="height" multiplier="1:1" id="NBH-0i-VE1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -401,13 +401,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WNh-aG-Ou4">
-                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="219.99999999999997" y="0.0" width="43.000000000000028" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="WNh-aG-Ou4" secondAttribute="height" multiplier="1:1" id="kCw-Gt-ILN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -427,17 +427,17 @@
                                             <constraint firstItem="WNh-aG-Ou4" firstAttribute="width" secondItem="WNh-aG-Ou4" secondAttribute="height" multiplier="1:1" id="nvf-s8-mNa"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UFA-gy-1ha">
-                                        <rect key="frame" x="0.0" y="180" width="268" height="43"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UFA-gy-1ha">
+                                        <rect key="frame" x="0.0" y="176" width="263" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qTH-qj-5vo">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="qTH-qj-5vo" secondAttribute="height" multiplier="1:1" id="JUq-4c-Kh9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -445,13 +445,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MML-zb-rdZ">
-                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="44" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="MML-zb-rdZ" secondAttribute="height" multiplier="1:1" id="4Ui-jA-kwP"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -459,13 +459,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-1O-7bR">
-                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="88" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Jt7-1O-7bR" secondAttribute="height" multiplier="1:1" id="Fcr-zQ-uhO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -473,13 +473,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="clK-sL-to0">
-                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="132" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="clK-sL-to0" secondAttribute="height" multiplier="1:1" id="lNa-Gn-EM7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -487,13 +487,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="dcY-7W-5qf">
-                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
+                                                <rect key="frame" x="176" y="0.0" width="43" height="43"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="dcY-7W-5qf" secondAttribute="height" multiplier="1:1" id="J7c-PT-aOe"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -501,13 +501,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hXc-T5-TI3">
-                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="219.99999999999997" y="0.0" width="43.000000000000028" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hXc-T5-TI3" secondAttribute="height" multiplier="1:1" id="OVc-nj-JNZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -527,17 +527,17 @@
                                             <constraint firstItem="dcY-7W-5qf" firstAttribute="width" secondItem="dcY-7W-5qf" secondAttribute="height" multiplier="1:1" id="yTi-yn-Eke"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-2I-dXo">
-                                        <rect key="frame" x="0.0" y="225" width="268" height="43"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-2I-dXo">
+                                        <rect key="frame" x="0.0" y="220" width="263" height="43"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oRl-U4-qsk">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="oRl-U4-qsk" secondAttribute="height" multiplier="1:1" id="g9b-w5-7Jl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -545,13 +545,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nQ9-By-gsK">
-                                                <rect key="frame" x="45" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="44" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="nQ9-By-gsK" secondAttribute="height" multiplier="1:1" id="vBy-EZ-KUA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -559,13 +559,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xs2-kp-jSx">
-                                                <rect key="frame" x="90" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="88" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xs2-kp-jSx" secondAttribute="height" multiplier="1:1" id="Ld0-ad-L1G"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -573,13 +573,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-KF-YHw">
-                                                <rect key="frame" x="135" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="132" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Hlh-KF-YHw" secondAttribute="height" multiplier="1:1" id="vHg-FS-zW7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -587,13 +587,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yfX-Ed-iaU">
-                                                <rect key="frame" x="180" y="0.0" width="43" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="176" y="0.0" width="43" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yfX-Ed-iaU" secondAttribute="height" multiplier="1:1" id="de7-vK-gjV"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
@@ -601,13 +601,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C5N-ZN-5I8">
-                                                <rect key="frame" x="225.00000000000003" y="0.0" width="42.999999999999972" height="43"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="219.99999999999997" y="0.0" width="43.000000000000028" height="43"/>
+                                                <color key="backgroundColor" red="0.80520304570000001" green="0.70751795409999996" blue="0.41446267930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="C5N-ZN-5I8" secondAttribute="height" multiplier="1:1" id="q9R-7N-hAB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
-                                                <state key="normal" title="1">
+                                                <state key="normal">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
