@@ -10,6 +10,7 @@ import UIKit
 
 class puzzle2VC: UIViewController {
 
+    @IBOutlet weak var spaltenErrorLabel: UILabel!
     @IBOutlet weak var errorLabel: UILabel!
     // 1: Alle sechs horizontalen StackViews, in 6: benutzt für die programmatische Zuweisung von Tags an die Buttons
     @IBOutlet var horizontalStacks: [UIStackView]!
@@ -28,16 +29,16 @@ class puzzle2VC: UIViewController {
     var allFourGridLines = [UIButton]()
     
     // 5: Die Aufgabenstellung question: "0" = kein Clue, "1" = A, "2" = B, "3" = C; die -1 bedeuted keine ANgabe im Rätselgitter selbst; die Lösung solution entählt neben 1,2,3 für A,B,C auch -2 für das "X" in der Lösung, also das eine Leerkästchen pro Zeile
-    //var question1 = [0, 0, 0, 0, 0, 0, 2, -1, -1, -1, -1, 3, 3, -1, -1, -1, -1, 0, 3, -1, -1, -1, -1, 0, 0, -1, -1, -1, -1, 0, 0, 1, 3, 0, 2, 0]
-    var solution1 = [2, 1, -2, 3, 3, 2, 1, -2, -2, 3, 2, 1, 1, -2, 3, 2]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         boardInstance.tagsForAllButtons(horizontalStacks: horizontalStacks)
         boardInstance.tagsForPuzzleRows()
         showPuzzleTask()
+        checkDoublesInstance.solPrepare()
     }
     func showPuzzleTask() {
-        puzzleLoadInstance.load(loadCertainP: 0)
+        puzzleLoadInstance.load(loadCertainPuzzle: 0)
     }
 
     @IBAction func gridButtons(_ sender: UIButton) {
@@ -45,7 +46,7 @@ class puzzle2VC: UIViewController {
         
     }
     @IBAction func letterButtons(_ sender: UIButton) {
-        switch boardInstance.userInputs(sender: sender) {
+        switch boardInstance.userInputs(sender: sender).0 {
         case 1:
             errorLabel.text = "Zeile 1 hat Duplikate"
         case 2:
@@ -56,6 +57,24 @@ class puzzle2VC: UIViewController {
             errorLabel.text = "Zeile 4 hat Duplikate"
         default:
             errorLabel.text = ""
+        }
+        switch boardInstance.userInputs(sender: sender).1 {
+        case 5:
+            spaltenErrorLabel.text = "Spalte 1 hat Duplikate"
+        case 6:
+            spaltenErrorLabel.text = "Spalte 2 hat Duplikate"
+        case 7:
+            spaltenErrorLabel.text = "Spalte 3 hat Duplikate"
+        case 8:
+            spaltenErrorLabel.text = "Spalte 4 hat Duplikate"
+        default:
+            spaltenErrorLabel.text = ""
+        }
+        switch boardInstance.userInputs(sender: sender).2 {
+        case true:
+            spaltenErrorLabel.text = "Puzzle solved correctly!"
+        default:
+            spaltenErrorLabel.text = ""
         }
     }
 }

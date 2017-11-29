@@ -1113,13 +1113,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="ChE-6b-njA">
+                                <rect key="frame" x="160" y="416.5" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="CEr-Da-kUs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ETI-ct-Iho" firstAttribute="leading" secondItem="uXc-QA-Edm" secondAttribute="leading" constant="24" id="FLB-LQ-PCp"/>
                             <constraint firstItem="5mn-ys-0aS" firstAttribute="centerX" secondItem="Zdi-DN-h8W" secondAttribute="centerX" id="InL-ag-6SG"/>
+                            <constraint firstItem="ChE-6b-njA" firstAttribute="centerX" secondItem="Zdi-DN-h8W" secondAttribute="centerX" id="KiD-eh-Pn0"/>
                             <constraint firstItem="uXc-QA-Edm" firstAttribute="trailing" secondItem="cUg-JG-amY" secondAttribute="trailing" constant="90" id="Mui-LD-RVk"/>
                             <constraint firstItem="cUg-JG-amY" firstAttribute="leading" secondItem="uXc-QA-Edm" secondAttribute="leading" constant="90" id="Na3-Cd-vUM"/>
+                            <constraint firstItem="ChE-6b-njA" firstAttribute="top" secondItem="5mn-ys-0aS" secondAttribute="bottom" constant="12" id="QSq-8w-lqF"/>
                             <constraint firstItem="5mn-ys-0aS" firstAttribute="top" secondItem="cUg-JG-amY" secondAttribute="bottom" constant="18" id="l2Y-hw-u2Y"/>
                             <constraint firstItem="uXc-QA-Edm" firstAttribute="trailing" secondItem="ETI-ct-Iho" secondAttribute="trailing" constant="24" id="pFD-hX-zbK"/>
                             <constraint firstItem="cUg-JG-amY" firstAttribute="top" secondItem="ETI-ct-Iho" secondAttribute="bottom" constant="8" id="poI-G5-fVS"/>
@@ -1130,6 +1141,7 @@
                     <navigationItem key="navigationItem" title="ABC 001" id="p5K-GZ-EfE"/>
                     <connections>
                         <outlet property="errorLabel" destination="5mn-ys-0aS" id="0rF-Ya-Lda"/>
+                        <outlet property="spaltenErrorLabel" destination="ChE-6b-njA" id="maj-am-toS"/>
                         <outletCollection property="horizontalStacks" destination="Ugn-S9-9f1" collectionClass="NSMutableArray" id="07f-Jf-Hrz"/>
                         <outletCollection property="horizontalStacks" destination="oSD-h3-ZN0" collectionClass="NSMutableArray" id="eSX-Ta-Mlf"/>
                         <outletCollection property="horizontalStacks" destination="djb-i0-Vpr" collectionClass="NSMutableArray" id="fou-cD-l6L"/>

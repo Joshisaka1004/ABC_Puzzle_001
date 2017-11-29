@@ -17,6 +17,7 @@ class puzzleVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         giveTagsToButtons()
+        checkDoublesInstance.solPrepare()
     }
 
     func giveTagsToButtons() {
@@ -32,6 +33,6 @@ class puzzleVC: UIViewController {
     }
     
     @IBAction func myB1(_ sender: UIButton) {
-        print(sender.tag)
+        
     }
 }
