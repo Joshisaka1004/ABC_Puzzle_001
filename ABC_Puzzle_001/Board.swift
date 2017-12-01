@@ -22,6 +22,9 @@ class Board {
     var gridLine4Contents = ["0", "0", "0", "0"]
     var allFourGridLines = [UIButton]()
     func tagsForAllButtons(horizontalStacks: [UIStackView]) {
+        allButtons.removeAll()
+        stack1.removeAll()
+        increase = 0
         for k in 0...5 {
             stack1.append(k)
         }
@@ -51,17 +54,24 @@ class Board {
     }
     
     func highlightYellow(sender: UIButton) {
-        for j in allButtons {
-            if allFourGridLines.contains(j) {
-                j.isUserInteractionEnabled = true
-                if j.backgroundColor == UIColor.yellow {
-                    j.backgroundColor = UIColor.white
+        if sender.tag == 1000 {
+            for k in allFourGridLines {
+                k.setTitle("", for: .normal)
+            }
+        } else {
+            for j in allButtons {
+                if allFourGridLines.contains(j) {
+                    j.isUserInteractionEnabled = true
+                    if j.backgroundColor == UIColor.yellow {
+                        j.backgroundColor = UIColor.white
+                    }
+                    allButtons[sender.tag].backgroundColor = UIColor.yellow
+                } else {
+                    j.isUserInteractionEnabled = false
                 }
-                allButtons[sender.tag].backgroundColor = UIColor.yellow
-            } else {
-                j.isUserInteractionEnabled = false
             }
         }
+        
     }
     
     func userInputs(sender: UIButton) -> (Int, Int, Bool) {
@@ -69,12 +79,17 @@ class Board {
         var result2 = 0
         var result3 = false
         for i in allButtons where i.backgroundColor == UIColor.yellow {
-            i.setTitle(sender.currentTitle!, for: .normal)
-            result = checkDoublesInstance.checkerForDoubles(param: i)
-            result2 = checkDoublesInstance.checkforDoublesInCols(param: i)
-            result3 = checkDoublesInstance.entireSolution()
+            if sender.currentTitle == "Cor." {
+                i.setTitle("", for: .normal)
+            } else {
+                i.setTitle(sender.currentTitle!, for: .normal)
+                result = checkDoublesInstance.checkerForDoubles(param: i)
+                result2 = checkDoublesInstance.checkforDoublesInCols(param: i)
+                result3 = checkDoublesInstance.entireSolution()
+            }
+            
         }
-        print(checkDoublesInstance.userSolution)
+        print(checkDoublesInstance.userSolution,"zzzz", checkDoublesInstance.solution1b)
         return (result, result2, result3)
     }
 }

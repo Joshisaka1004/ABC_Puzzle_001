@@ -10,12 +10,13 @@ import UIKit
 
 class puzzle2VC: UIViewController {
 
+    @IBOutlet weak var solvedMessage: UILabel!
     @IBOutlet weak var spaltenErrorLabel: UILabel!
     @IBOutlet weak var errorLabel: UILabel!
     // 1: Alle sechs horizontalen StackViews, in 6: benutzt für die programmatische Zuweisung von Tags an die Buttons
     @IBOutlet var horizontalStacks: [UIStackView]!
     // 2: Alle 36 Buttons, das muss in künftigen Versionen modifiziert werden, die Elemente um das eigentliche Rätselgitter herum müssen keine Buttons sein, Labels tun es hier auch.
-    var allButtons = [UIButton]()
+    
     // 3: Wird alsbald mit Integern von 0 bis 5 gefüllt -> als Indexierungshilfe für die Tagvergabe unter 6:
     var stack1 = [Int]()
     var increase = 0 //erhöht die Tag-Werte um jeweils 6, s.u. 6:
@@ -30,6 +31,9 @@ class puzzle2VC: UIViewController {
     
     // 5: Die Aufgabenstellung question: "0" = kein Clue, "1" = A, "2" = B, "3" = C; die -1 bedeuted keine ANgabe im Rätselgitter selbst; die Lösung solution entählt neben 1,2,3 für A,B,C auch -2 für das "X" in der Lösung, also das eine Leerkästchen pro Zeile
     
+    @IBAction func restartBtn(_ sender: UIButton) {
+        boardInstance.highlightYellow(sender: sender)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         boardInstance.tagsForAllButtons(horizontalStacks: horizontalStacks)
@@ -37,6 +41,12 @@ class puzzle2VC: UIViewController {
         showPuzzleTask()
         checkDoublesInstance.solPrepare()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+    }
+    
     func showPuzzleTask() {
         puzzleLoadInstance.load(loadCertainPuzzle: 0)
     }
@@ -72,9 +82,9 @@ class puzzle2VC: UIViewController {
         }
         switch boardInstance.userInputs(sender: sender).2 {
         case true:
-            spaltenErrorLabel.text = "Puzzle solved correctly!"
+            solvedMessage.text = "Puzzle solved correctly!"
         default:
-            spaltenErrorLabel.text = ""
+            solvedMessage.text = ""
         }
     }
 }

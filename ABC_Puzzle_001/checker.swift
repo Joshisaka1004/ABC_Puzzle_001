@@ -25,7 +25,7 @@ class checker {
     var col4 = ["1", "2", "3", "4"]
     var allCols = [[String]]()
     var spalte = 0
-    var solution1 = [2, 1, -2, 3, 3, 2, 1, -2, -2, 3, 2, 1, 1, -2, 3, 2]
+    var solution1 = [2, 1, -6, 3, 3, 2, 1, -8, -2, 3, 2, 1, 1, -4, 3, 2]
     var solution1b = [String]()
     var solution1c = [String]()
     func checkerForDoubles(param: UIButton) -> Int {
@@ -90,6 +90,7 @@ class checker {
     }
     
     func solPrepare() {
+        solution1b.removeAll()
         for i in 0..<solution1.count {
             solution1b.append(String(solution1[i]))
             solution1c.append(String(solution1[i]))
@@ -105,7 +106,7 @@ class checker {
                 solution1b[j] = "C"
                 solution1c[j] = "C"
             } else {
-                solution1b[j] = "0"
+                solution1b[j] = "\((Int(solution1b[j])! / -2))"
                 solution1c[j] = "X"
             }
         }
