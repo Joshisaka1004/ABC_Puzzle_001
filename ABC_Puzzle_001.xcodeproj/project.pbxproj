@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3157091FD1B81800658571 /* myBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3157081FD1B81800658571 /* myBoard.swift */; };
 		3B4195B91FCD5C3500BCC903 /* checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4195B81FCD5C3500BCC903 /* checker.swift */; };
 		3B4195BB1FCD690300BCC903 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4195BA1FCD690300BCC903 /* Board.swift */; };
 		3B4195BD1FCD7BB200BCC903 /* LoadPuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4195BC1FCD7BB200BCC903 /* LoadPuzzle.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3157081FD1B81800658571 /* myBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myBoard.swift; sourceTree = "<group>"; };
 		3B4195B81FCD5C3500BCC903 /* checker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checker.swift; sourceTree = "<group>"; };
 		3B4195BA1FCD690300BCC903 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		3B4195BC1FCD7BB200BCC903 /* LoadPuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPuzzle.swift; sourceTree = "<group>"; };
@@ -45,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3157061FD1AF0200658571 /* FilesForVC2 */ = {
+			isa = PBXGroup;
+			children = (
+				3BD3E1541FCC66A0004C754A /* puzzle2VC.swift */,
+				3B4195BA1FCD690300BCC903 /* Board.swift */,
+				3B4195BC1FCD7BB200BCC903 /* LoadPuzzle.swift */,
+				3B4195B81FCD5C3500BCC903 /* checker.swift */,
+			);
+			path = FilesForVC2;
+			sourceTree = "<group>";
+		};
+		3B3157071FD1AF1C00658571 /* FilesForVC */ = {
+			isa = PBXGroup;
+			children = (
+				3B5DA1D51FCC051C00219A01 /* puzzleVC.swift */,
+				3B3157081FD1B81800658571 /* myBoard.swift */,
+			);
+			path = FilesForVC;
+			sourceTree = "<group>";
+		};
 		3B5DA1B71FCBF8B800219A01 = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +89,8 @@
 				3B5DA1C31FCBF8B800219A01 /* AppDelegate.swift */,
 				3B5DA1C51FCBF8B800219A01 /* ViewController.swift */,
 				3B5DA1C71FCBF8B800219A01 /* Main.storyboard */,
-				3B5DA1D51FCC051C00219A01 /* puzzleVC.swift */,
-				3BD3E1541FCC66A0004C754A /* puzzle2VC.swift */,
-				3B4195BA1FCD690300BCC903 /* Board.swift */,
-				3B4195BC1FCD7BB200BCC903 /* LoadPuzzle.swift */,
-				3B4195B81FCD5C3500BCC903 /* checker.swift */,
+				3B3157071FD1AF1C00658571 /* FilesForVC */,
+				3B3157061FD1AF0200658571 /* FilesForVC2 */,
 				3B5DA1CA1FCBF8B800219A01 /* Assets.xcassets */,
 				3B5DA1CC1FCBF8B800219A01 /* LaunchScreen.storyboard */,
 				3B5DA1CF1FCBF8B800219A01 /* Info.plist */,
@@ -157,6 +176,7 @@
 				3B5DA1D61FCC051C00219A01 /* puzzleVC.swift in Sources */,
 				3B4195BD1FCD7BB200BCC903 /* LoadPuzzle.swift in Sources */,
 				3B4195B91FCD5C3500BCC903 /* checker.swift in Sources */,
+				3B3157091FD1B81800658571 /* myBoard.swift in Sources */,
 				3BD3E1551FCC66A0004C754A /* puzzle2VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
