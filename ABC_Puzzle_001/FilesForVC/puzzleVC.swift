@@ -10,20 +10,24 @@ import UIKit
 
 class puzzleVC: UIViewController {
 
-    
+    // 1: Alle 16 Buttons im Grid als Outlet-Collection von UIButtons
     @IBOutlet var gridButtonsOutlets: [UIButton]!
-    
+    // 2: Die Buttons, die die Clues um das Gitter herum enthalten sollen, ebenflls als Outlet-Collection
     @IBOutlet var taskClues: [UIButton]!
-    
+    // 3: Hilfsgröße zur programmatischen Tagzuweisung, Erklärung weiter unten
     var counter = 11
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        giveTags() // first, I try to give tags to each button in the grid immediately when loading the screen
+        giveTags() // Die Funktion, die nach dem Appstart die Tags zuweisens soll
+        for j in taskClues {
+            myBoardInstance.loadPuzzle(clueButton: j)
+        }
     }
 
     func giveTags() {
         for i in gridButtonsOutlets { //jedes Element in den gridButtons
+            i.setTitle("", for: .normal)
             i.tag = counter //erhält einen Tag, beginnend mit 11 (=counter)
             counter += 1 //der erste gridButton hat tag=11, nun wird counter
             if counter % 10 > 4 { //erhöht; falls "Einerziffer" größer als 4
@@ -48,7 +52,9 @@ class puzzleVC: UIViewController {
     }
     
     @IBAction func gridButtons(_ sender: UIButton) {
-        myBoardInstance.highlightYellow(sender: sender)
+        if sender.tag < 500 {
+            myBoardInstance.highlightYellow(sender: sender)
+        }
         
     }
     
